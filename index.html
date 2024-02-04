@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="rps.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="rstb">
+            <button class="rst" onclick="reset()">Restart</button>
+        </div>
+        <div class="scr">
+            <div class="scr1">
+                <font class="status_txt" id="pscore">0</font>
+            </div>
+            <div class="status">
+                <font class="status_txt" id="status">WIN</font>
+            </div>
+            <div class="scr2">
+                <font class="status_txt" id="cscore">0</font>
+            </div>
+        </div>
+    </div>
+
+    <div class="play_area">
+        <div class="scrn1">
+            <img src="all1.png" alt="Rock" class="pic" id="lpic">
+            <font class="player">YOU</font>
+            <div class="opt">
+                <button class="opt1" onclick="chosed(1)">Rock</button>
+                <button class="opt2" onclick="chosed(2)">Papper</button>
+                <button class="opt3" onclick="chosed(3)">Scissors</button>
+            </div>
+        </div>
+        <div class="playb">
+            <button class="play" id="play">V/S</button>
+        </div>
+        <div class="scrn2">
+            <img src="all1.png" alt="papper" class="pic" id="rpic">
+            <font class="player">AI</font>
+        </div>
+    </div>
+    <div class="set">
+        <form action="">
+            <select name="back" id="back1" onchange="changeb()">
+                <option value="1" class="bop">Background - 1</option>
+                <option value="2" class="bop" selected>Background - 2</option>
+                <option value="3" class="bop">Background - 3</option>
+                <option value="4" class="bop">Background - 4</option>
+                <option value="5" class="bop">Background - 5 </option>
+            </select>
+            <select name="round" id="rnd1" onchange="changer()">
+                <option value="5" class="bop" onclick="changer()">5 Rounds</option>
+                <option value="10" class="bop" selected>10 Rounds</option>
+                <option value="15" class="bop">15 Rounds</option>
+                <option value="20" class="bop">20 Rounds</option>
+                <option value="25" class="bop">25 Rounds</option>
+                <option value="50" class="bop">50 Rounds</option>
+            </select>
+        </form>
+    </div>
+</body>
+<script src="rps.js">
+    reset()
+{
+    document.getElementById("pscore").innerText = "0"
+}
+</script>
+</html>
