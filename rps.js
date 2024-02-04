@@ -1,3 +1,4 @@
+alert("please use laptop ,  it's not responsive now , but i'm working on it");
 let n=10;
 let ys=0;
 let as =0;
