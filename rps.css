@@ -144,6 +144,7 @@ body
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .scrn1
 {
@@ -151,7 +152,6 @@ body
     border: 2px solid rgba(0, 0, 0, 0.5);
     width: 35%;
     float: left;
-    margin-left: 10%;
     margin-right: 10px;
     backdrop-filter: blur(10px);
     border-radius: 20px;
